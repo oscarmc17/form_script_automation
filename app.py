@@ -29,6 +29,8 @@ form4 = driver.find_element(By.ID, 'wpforms-8-field_2')
 form4.clear()
 form4.send_keys('Hi, I need help with a website. I could use a quote for the work.')
 
+btn = driver.find_element(By.ID, 'wpforms-submit-8')
+btn.click()
 
 
 
