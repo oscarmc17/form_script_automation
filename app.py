@@ -40,23 +40,14 @@ client_title = driver.find_element(
     By.XPATH, '// *[@id="post-112"]/div/div/section[2]/div/div[1]/div/div[2]/div/div/div/h4')
 
 client_paragraph = driver.find_element(
-    By.XPATH, '//*[@id="post-112"]/div/div/section[2]/div/div[1]/div/div[2]/div/div/div/p')
+    By.XPATH, '//*[@id="post-112"]/div/div/section[2]/div/div[1]/div/div[2]/div/div/div/p').text
 
-split = client_paragraph.text.strip(" ")
 
-# print(client_title.text)
-print(len(split))
+print(client_title.text)
+print(client_paragraph)
 
 
 
 # driver.back()
 # time.sleep(5)
 driver.quit()
-
-
-# element = driver.find_element(
-#     By.XPATH, '//*[@id="menu-item-121"]/a')
-
-# actions = ActionChains(driver)
-# actions.click(element)
-# actions.perform()
